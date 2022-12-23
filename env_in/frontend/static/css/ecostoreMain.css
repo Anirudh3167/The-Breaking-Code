@@ -1,0 +1,71 @@
+.ultra-wrapperTwo{
+    margin-top: 70px;
+}
+.wrapperTwo{
+    width: 100%;
+    height: fit-content;
+    padding: 50px 0;
+}
+.wrapperTwo .header-store{
+    margin: 0 auto;
+    text-align: center;
+    width: 70%;
+}
+.wrapperTwo .header-store h1{
+    margin: 30px 0;
+    color: rgb(54, 54, 54);
+    font-size: xxx-large;
+}
+.wrapperTwo .header-store p{
+    color: rgb(93, 93, 93);
+    font-size: xx-large;
+    margin: 20px 0;
+}
+.wrapperTwo .cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+}
+.wrapperTwo .cards .card{
+    flex-basis: 25%;
+    padding: 10px 20px;
+}
+.wrapperTwo .cards .card .image{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 100%;
+    min-width: 280px;
+    height: 20rem; /* remove when image is added */
+}
+.wrapperTwo .cards .card .text{
+    margin: 20px 0;
+}
+.wrapperTwo .cards .card .text h3{
+    padding: 10px 0;
+    font-size: x-large;
+    color: rgb(57, 57, 57);
+}
+.wrapperTwo .cards .card .text p{
+    color: rgb(100, 100, 100);
+    font-size: large;
+}
+.wrapperTwo .cards .card .text>a>p{
+    margin: 20px 0;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    background: rgb(44, 128, 207);
+    font-weight: 600;
+    color: #fff;
+}
+.wrapperTwo .cards .card .text>a>p:hover{
+    background: #fff;
+    padding: 8px;
+    color: rgb(44, 128, 207);
+    border: 2px solid rgb(44, 128, 207);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.25s ease-in-out;
+}

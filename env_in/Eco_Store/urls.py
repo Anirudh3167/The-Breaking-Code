@@ -5,4 +5,5 @@ app_name = "Eco_Store"
 urlpatterns = [
     path('',Home,name="Home"),
     path('prod/',Product,name="Product"),
+    path('prod-cat/',ProdCategories,name="ProductCategories"),
 ]

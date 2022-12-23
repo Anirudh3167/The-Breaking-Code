@@ -6,3 +6,6 @@ def Home(request):
     
 def Product(request):
     return render(request,"Eco_Store/product_details.html")
+
+def ProdCategories(request):
+    return render(request,"Eco_Store/storeHome_categories.html")
