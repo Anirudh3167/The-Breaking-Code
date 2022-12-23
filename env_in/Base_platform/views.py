@@ -51,3 +51,15 @@ def Login(request):
 def Logout(request):
     logout(request)
     return redirect('Base_platform:Home')
+
+def Leafs(request):
+    return render(request,"Eco_Store/Redeem/index.html")
+
+def Help(request):
+  return render(request,'Base_platform/FAQ.html')
+
+def FAQ(request):
+  return render(request,'Base_platform/FAQ.html')
+
+def Profile(request):
+    return render(request,"Base_platform/Profile.html")

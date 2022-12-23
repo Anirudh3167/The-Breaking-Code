@@ -46,7 +46,7 @@
             <label for="show-store">Eco Store</label>
             <ul>
             <li><a href="{% url 'Eco_Store:ProductCategories' %}"> Buy New </a></li>
-            <li><a href="/EcoStore/Redeem/index.html"> Recycle </a></li>
+            <li><a href="{% url 'Eco_Store:Reused'%}"> Reused </a></li>
             </ul>
         </li>
         <li>
@@ -58,6 +58,8 @@
             <li><a href="{% url 'Eco_Info:Learn' %}"> Learn </a></li>
             </ul>
         </li>
+        <li><a href="{% url 'Base_platform:Help' %}">Help</a></li>
+        <li><a href="{% url 'Base_platform:Profile' %}">Profile</a></li>
         {% if user.is_authenticated %}
         <li><a href="{% url 'Base_platform:Logout' %}">Logout</a></li>
         {% else %}

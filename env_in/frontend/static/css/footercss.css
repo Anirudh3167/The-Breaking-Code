@@ -3,7 +3,7 @@
 .footer {
   position: relative;
   margin-top: 10rem;
-  width: 100%;
+  width: 100vw;
   background: #00AC47;
   min-height: 100px;
   padding: 20px 50px;

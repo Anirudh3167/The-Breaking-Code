@@ -36,3 +36,6 @@ def PaymentDirection(request):
     hosted_url = response['data']['redirect_url']
     #print("REDIRECT_URL:",hosted_url)
     return redirect(hosted_url)
+
+def Reused(request):
+    return render(request,"Eco_Store/reused.html")
