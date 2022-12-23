@@ -25,10 +25,10 @@
 }
 
 .proCardLeft:nth-child(1)::before{
-    background-image: url("/Resources/images/plantbook.jpeg");
+    background-image: url("/static/Images/plantbook.jpeg");
 }
 .proCardLeft:nth-child(2)::before{
-    background-image: url("/Resources/images/ecostore.jpeg");
+    background-image: url("/static/Images/ecostore.jpeg");
     transform: translate(15%,-5%);
 }
 .proCardRight{
