@@ -1,197 +1,48 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        * {
-    margin: 0;
-    padding: 0;
-    font-family: 'poppins',sans-serif;
-    box-sizing: border-box;
-}
-
-body{
-    background: #eef8ff;
-}
-footer{
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    background:linear-gradient(to right,#0a0b15,#222) ;
-    color: #fff;
-    padding: 100px 0 30px;
-        
-    font-size: 13px;
-    line-height: 18px;
-}
-.row{
-    width: 85%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-.col{
-    flex-basis: 30%;
-    padding: 10px;
-}
-.col h1{
-    width: 100%;
-    margin-bottom: 40px;
-    position: relative;
-}
-.col h2{
-    width: 100%;
-    margin-bottom: 40px;
-    position: relative;
-}
-.cold h2{
-    width: 100%;
-    margin-bottom: 40px;
-    position: relative;
-}
-ul li a{
-    text-decoration: none;
-    color: #fff;
-}
-.Social-Handles .fa-brands{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 40px;
-    font-size: 20px;
-    color: #000;
-    background: #fff;
-    margin-right: 15px;
-    cursor: pointer;
-}
-.cold{
-    flex-basis: 10%;
-    padding: 10px;
-}
-hr{
-    width: 90%;
-    border: 0;
-    border-bottom: 1px solid #ccc;
-    margin: 20px auto;
-}
-.copyright{
-    text-align: center;
-}
-.underline{
-    width: 70%;
-    height: 5px;
-    background: #767676;
-    border-radius: 3px;
-    position: absolute;
-    top: 25px;
-    left:0;
-    overflow: hidden;
-}
-.underline1{
-    width: 30%;
-    height: 5px;
-    background: #767676;
-    border-radius: 3px;
-    position: absolute;
-    top: 25px;
-    left:0;
-    align-content: center;
-    overflow: hidden;
-   
-}
-
-.underline2{
-    width: 50%;
-    height: 5px;
-    background: #767676;
-    border-radius: 3px;
-    position: absolute;
-    top: 25px;
-    left:0;
-    align-content: center;
-    overflow: hidden;
-   
-}
-.underline span{
-    width: 15px;
-    height: 100%;
-    background: #fff;
-    border-radius: 3px;
-    position: absolute;
-    top:0;
-    left: 10px;
-    animation: moving 2s linear infinite;
-}
-.underline1 span{
-    width: 15px;
-    height: 100%;
-    background: #fff;
-    border-radius: 3px;
-    position: absolute;
-    top:0;
-    left: 10px;
-    animation: moving 2s linear infinite;
-}
-.underline2 span{
-    width: 15px;
-    height: 100%;
-    background: #fff;
-    border-radius: 3px;
-    position: absolute;
-    top:0;
-    left: 10px;
-    animation: moving 2s linear infinite;
-}
-@keyframes moving {
-    0%{
-        left:-20px;
-        
-    }
-    100%{
-        left:100%;
-
-    }
-}
-    </style>
+    <title></title>
+    <link rel="stylesheet" href="{% static 'css/footercss.css' %}">
 </head>
 <body>
-    <footer>
-        <div class="row"> 
-            <div class="col">
-                <h1>Rapyd <div class="underline1"><span></span></div></h1>
-                <p> Our website intends to provide a fully functioning Fintech solution with Rapyd API's. Also by adding the climate tech to Fin tech we can check its carbon footprints and also the possible products or methods to reduce it. Apart from it, the transactions done by this website will give you some leaf points.</i> </p>
+    <div class="container">
+        <footer class="footer">
+            <div class="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
             </div>
-            
-            <div class="cold">
-                <h2>Links <div class="underline"><span></span></div></h2>
-                <ul>
-                    <li><a href="">Platform</i> </a></li>
-                    <li><a href="">Profile</i></a></li>
-                    <li><a href="">About us</></a></li>
-                
-                </ul>
-            </div> 
-            <div class="col">
-                <h2>Social-Handles <div class="underline2"><span></span></div></h2>
-                <div class="Social-Handles">
-                    <a href="https://www.instagram.com/wearerapyd/" target="_blank">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a href="https://www.facebook.com/rapydpayments" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="https://twitter.com/RapydGlobal" target="_blank"> <i class="fa-brands fa-twitter"></i></a>
-                   <a href="https://uk.linkedin.com/company/rapydpayments" target="_blank">  <i class="fa-brands fa-linkedin"></i></a>
-                   
-                </div>
-            </div>
-        </div>
-        <hr> 
-        <p class="copyright">Powered by climateFinTech ©️ 2022</p>
-    </footer>
+            <ul class="social-icon">
+                <li class="social-icon__item"><a class="social-icon__link" href="#">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a></li>
+                <li class="social-icon__item"><a class="social-icon__link" href="#">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a></li>
+                <li class="social-icon__item"><a class="social-icon__link" href="#">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a></li>
+                <li class="social-icon__item"><a class="social-icon__link" href="#">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a></li>
+            </ul>
+            <ul class="menu">
+                <li class="menu__item"><a class="menu__link" href="{% url 'Base_platform:Home' %}">Home</a></li>
+                <li class="menu__item"><a class="menu__link" href="{% url 'Green_4_U:Home' %}">Green 4 U</a></li>
+                <li class="menu__item"><a class="menu__link" href="{% url 'Eco_Store:Home' %}">Eco Store</a></li>
+                <li class="menu__item"><a class="menu__link" href="{% url 'Eco_Info:Home' %}">Educate</a></li>
+                <li class="menu__item"><a class="menu__link" href="{% url 'Eco_Info:Blogs' %}">Blog</a></li>
+        
+            </ul>
+            <p>&copy;EcoIN | HackwithMait3.0</p>
+            </footer>
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </div>
 </body>
 </html>

@@ -50,15 +50,15 @@
             </ul>
         </li>
         <li>
-            <a href="/EcoEdu/index.html" class="desktop-link">Educate</a>
+            <a href="{% url 'Eco_Info:Home' %}" class="desktop-link">Educate</a>
             <input type="checkbox" id="show-edu" />
             <label for="show-edu">Educate</label>
             <ul>
-            <li><a href="/EcoEdu/Blogs/index.html"> Blogs </a></li>
-            <li><a href="/EcoEdu/Learn/index.html"> Learn </a></li>
+            <li><a href="{% url 'Eco_Info:Blogs' %}"> Blogs </a></li>
+            <li><a href="{% url 'Eco_Info:Learn' %}"> Learn </a></li>
             </ul>
         </li>
-        <li><a href="/Utility/login-signup.html">Login/Signup</a></li>
+        <li><a href="{% url 'Base_platform:Login' %}">Login/Signup</a></li>
         
         </ul>
         <div class="logo"><a href="{% url 'Base_platform:Home' %}">Eco<font color="#00ffd9">IN</font></a></div>
