@@ -58,7 +58,11 @@
             <li><a href="{% url 'Eco_Info:Learn' %}"> Learn </a></li>
             </ul>
         </li>
+        {% if user.is_authenticated %}
+        <li><a href="{% url 'Base_platform:Logout' %}">Logout</a></li>
+        {% else %}
         <li><a href="{% url 'Base_platform:Login' %}">Login/Signup</a></li>
+        {% endif %}
         
         </ul>
         <div class="logo"><a href="{% url 'Base_platform:Home' %}">Eco<font color="#00ffd9">IN</font></a></div>
